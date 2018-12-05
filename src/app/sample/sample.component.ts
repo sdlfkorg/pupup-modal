@@ -11,6 +11,7 @@ export class SampleComponent implements OnInit {
   constructor(private modalService: ModalService) { }
 
   ngOnInit() {
+    console.log('this: ', this);
   }
 
   public close() {

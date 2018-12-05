@@ -1,9 +1,10 @@
 <div class="sample-container">
   <div class="sample-text">
-    This is the sample modal
+    Photo id: {{photo.id}}
+    <img [src]="photo.photoUrl" alt="">
   </div>
   <div class="sample-close">
-    
+
     <button (click)="close()">
       X
     </button>

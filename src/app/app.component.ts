@@ -28,6 +28,7 @@ export class AppComponent {
   closeModal(){
     // console.log('closeModal');
     // this.modalServ.closeModal();
+    this.modalServ.destroy();
   }
   openModal(photo){
 
