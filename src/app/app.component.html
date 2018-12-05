@@ -1,1 +1,20 @@
 <h1>ng playground</h1>
+
+
+
+
+<div >
+    <a style="margin: 5px; cursor: pointer"
+        *ngFor="let photo of photos" 
+        (click)="openModal(photo)">
+        <img [src]="photo.photoUrl">
+    </a>
+</div>
+
+
+<button class="btn btn-primary">Modal test</button>
+
+
+
+<div id="modal-container" class="hidden"></div>
+<div id="overlay" (click)="closeModal()" class="hidden"></div>
